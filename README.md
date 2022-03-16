@@ -4,7 +4,7 @@
 ## Preview
 ![image](https://user-images.githubusercontent.com/36258300/158611318-ddf9ba50-c036-45cb-baf4-11840e731a23.png)
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/jW9cdENUoxo/0.jpg)](https://youtu.be/jW9cdENUoxo)
+[![DEMO VIDEO](https://img.youtube.com/vi/jW9cdENUoxo/0.jpg)](https://youtu.be/StTqXEQ2l-Y "DEMO VIDEO")
 
 ## Installation
 - Download this and put it inside your resources folder ( ⚠️ DO NOT CHANGE THE RESOURCE NAME )
