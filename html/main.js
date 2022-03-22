@@ -69,6 +69,8 @@ $(document).keyup(function (event) {
 		$('#container').hide();
 		currentMenuAction = null
 		return
+	} else if (event.which === 13) {
+		$( "#butt" ).trigger( "click" );
 	}
 });
 
