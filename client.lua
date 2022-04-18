@@ -50,17 +50,17 @@ RegisterNUICallback('exit', function(data)
 	dialogOpen = false
 end)
 
-RegisterNUICallback('submit', function(data)	
+RegisterNUICallback('submit', function(data)
+	SetNuiFocus(false,false)
+	dialogOpen = false
 	if data.currMA == currDialog then -- This is to avoid the script being triggered by someone using FiveM's NUI Dev Tools
 		currFS(data.text)
 	else
 		-- add something here to warn admins about potential cheaters
 	end
-    SetNuiFocus(false,false)
 	currDialog = nil
 	currFS = nil
 	currFC = nil
-	dialogOpen = false
 end)
 
 -------------------------------------------------------------------------------
