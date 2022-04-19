@@ -17,15 +17,6 @@ $(document).ready(function(){
 			handleDialog(item)
 		}
 	});
-	$('#butt').click(function () {
-		playSubmitSound()
-        // console.log('submit clicked')
-		let dialog = $("#input").val()
-		const data = JSON.stringify({ text: dialog, currMA: currentMenuAction })
-		$.post('https://an_dialogBox/submit', data);
-		currentMenuAction = null
-		$('#container').hide()
-    });
 	$('#close').click(function () {
 		playCloseSound()
 		// console.log('close clicked')
@@ -63,15 +54,31 @@ function handleDialog(item) {
 
 $(document).keyup(function (event) {
 	if (event.which == 27) {
-		// console.log('escaped')
+		console.log('escaped')
 		playCloseSound()
 		$.post('https://an_dialogBox/exit', JSON.stringify({}));
 		$('#container').hide();
 		currentMenuAction = null
 		return
-	} else if (event.which === 13) {
+	} /**else if (event.which === 13) {
 		$( "#butt" ).trigger( "click" );
-	}
+	}**/
+});
+
+$(document).submit(function( event ) {
+	event.preventDefault();
+	// console.log('submitted')
+	playSubmitSound()
+	// console.log('sound played')
+	let dialog = $("#input").val()
+	// console.log('creating dialog variable')
+	const data = JSON.stringify({ text: dialog, currMA: currentMenuAction })
+	// console.log('creating data json object')
+	$.post('https://an_dialogBox/submit', data);
+	// console.log('sending data...')
+	currentMenuAction = null
+	$('#container').hide()
+	// console.log('done')
 });
 
 //// Made By https://aymantv.tebex.io/
