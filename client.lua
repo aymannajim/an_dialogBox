@@ -11,7 +11,7 @@
 ------------------------------- CONFIGURATION ---------------------------------
 -------------------------------------------------------------------------------
 
-local debugMode = false -- Enables a command " /testdialog " to test the script
+local debugMode = true -- Enables a command " /testdialog " to test the script
 
 -------------------------------------------------------------------------------
 -------------------------------- DO NOT TOUCH ---------------------------------
@@ -36,6 +36,8 @@ function showDialog(name, label, input, help, submitFunc, cancelFunc)
 			helpText = help,
 		})
 		dialogOpen = true
+	else
+		print('^1dialog box already open!')
 	end
 end
 
@@ -54,13 +56,14 @@ RegisterNUICallback('submit', function(data)
 	SetNuiFocus(false,false)
 	dialogOpen = false
 	if data.currMA == currDialog then -- This is to avoid the script being triggered by someone using FiveM's NUI Dev Tools
-		currFS(data.text)
+		local doSubmitFunction = currFS
+		currDialog = nil
+		currFS = nil
+		currFC = nil
+		doSubmitFunction(data.text)
 	else
 		-- add something here to warn admins about potential cheaters
 	end
-	currDialog = nil
-	currFS = nil
-	currFC = nil
 end)
 
 -------------------------------------------------------------------------------
