@@ -25,6 +25,7 @@ exports['an_dialogBox']:showDialog(name, label, input, help, submitFunc, cancelF
 - **`help`** **[REQUIRED]** A little hint text below the text area
 - **`submitFunc()`** **[REQUIRED]** This is the function that runs once the OK button is clicked or when you click ENTER. It takes the input text typed into that form as an argument.
 - **`cancelFunc()`** [OPTIONAL] This is the function that runs once the Cancel button is clicked or the form is canceled. doesn't take any arguments and can be the function that runs if the player closes or cancel the dialog Box
+- **`textarea`** [OPTIONAL] [BOOLEAN] If this is set to true, the text area will become bigger and resizable ( Very useful for long input )
 
 ## Debug
 - Set **`debugMode`** on Line 14 of **`client.lua`** to **`true`**
@@ -34,7 +35,7 @@ exports['an_dialogBox']:showDialog(name, label, input, help, submitFunc, cancelF
 > You can put it on any script and it's gonna work
 ```lua
 RegisterCommand('example', function(src, args)
-		exports['an_dialogBox']:showDialog('example_dialog', 'Enter your name:', '0', 'This is a hint example', onSubmit, onCancel)
+		exports['an_dialogBox']:showDialog('example_dialog', 'Enter your name:', '0', 'This is a hint example', onSubmit, onCancel, true)
 end)
 function onSubmit(data)
 		print('You submitted the following text: ^1'..data)
