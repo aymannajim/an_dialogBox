@@ -4,8 +4,9 @@
 ## [👋 Join my Discord for Support](https://discord.gg/f2Nbv9Ebf5)
 
 ## Preview
-![image](https://user-images.githubusercontent.com/36258300/158611318-ddf9ba50-c036-45cb-baf4-11840e731a23.png)
-![image](https://user-images.githubusercontent.com/36258300/181437858-47f650a8-f9e0-4eff-8906-a74d91fff78f.png)
+![image](https://user-images.githubusercontent.com/36258300/181438042-ce64a8ed-9895-409f-a8ea-b1eec148d2dd.png)
+![image](https://user-images.githubusercontent.com/36258300/181438116-264b29d1-1456-43a1-873c-2249a00d2fbf.png)
+
 
 [![DEMO VIDEO](https://img.youtube.com/vi/jW9cdENUoxo/0.jpg)](https://youtu.be/jW9cdENUoxo "DEMO VIDEO")
 
