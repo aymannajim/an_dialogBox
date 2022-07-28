@@ -3,7 +3,7 @@
 -- The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 -- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
------ Made By https://aymantv.tebex.io/
+----- Made By https://a-n.tebex.io/
 ----- For Support, Join my Discord: https://discord.gg/f2Nbv9Ebf5
 ----- For custom services or help, check my Fiverr: https://www.fiverr.com/aymannajim
 
@@ -22,18 +22,22 @@ local currDialog = nil
 local currFS = {}
 local currFC = {}
 
-function showDialog(name, label, input, help, submitFunc, cancelFunc)
+function showDialog(name, label, input, help, submitFunc, cancelFunc, textarea)
 	if not dialogOpen then
 		currDialog = name
 		currFS = submitFunc
 		currFC = cancelFunc
 		SetNuiFocus(true,true)
+		if textarea == nil then
+			textarea = false
+		end
 		SendNUIMessage({
 			action = "showDialog",
 			menuAction = name,
 			label = label,
 			defaultInput = input,
 			helpText = help,
+			textarea = textarea,
 		})
 		dialogOpen = true
 	else
@@ -72,7 +76,7 @@ end)
 
 if debugMode then
 	RegisterCommand('testdialog', function(src, args)
-		showDialog('unique_dialog_name', 'Enter amount of cash:', '0', 'Amount in USD ⚠️ THIS IS A HINT THAT YOU CAN CHANGE!', testFuncSubmit, testFuncCancel)
+		showDialog('unique_dialog_name', 'Enter amount of cash:', '0', 'Hint!', testFuncSubmit, testFuncCancel, true)
 	end)
 	function testFuncSubmit(data)
 		print('You submitted the following text: ^1'..data)
@@ -84,6 +88,6 @@ end
 
 ------------------------------
 
------ Made By https://aymantv.tebex.io/
+----- Made By https://a-n.tebex.io/
 ----- For Support, Join my Discord: https://discord.gg/f2Nbv9Ebf5
 ----- For custom services or help, check my Fiverr: https://www.fiverr.com/aymannajim

@@ -3,7 +3,7 @@
 -- The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 -- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
------ Made By https://aymantv.tebex.io/
+----- Made By https://a-n.tebex.io/
 ----- For Support, Join my Discord: https://discord.gg/f2Nbv9Ebf5
 ----- For custom services or help, check my Fiverr: https://www.fiverr.com/aymannajim
 
@@ -12,7 +12,7 @@ fx_version 'cerulean'
 games { 'rdr3', 'gta5' }
 
 description 'AN Dialog Box | Join Discord for Support: https://discord.gg/f2Nbv9Ebf5'
-
+version '1.1.0'
 author 'AN Services'
 
 ui_page 'html/index.html'
@@ -38,6 +38,6 @@ exports {
 	'showDialog',
 }
 
------ Made By https://aymantv.tebex.io/
+----- Made By https://a-n.tebex.io/
 ----- For Support, Join my Discord: https://discord.gg/f2Nbv9Ebf5
 ----- For custom services or help, check my Fiverr: https://www.fiverr.com/aymannajim

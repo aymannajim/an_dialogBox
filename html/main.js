@@ -45,6 +45,11 @@ function playSubmitSound() {
 }
 
 function handleDialog(item) {
+	if ( item.textarea ) {
+		$("#input").replaceWith($('<textarea placeholder="Type here" class="form-control" id="input"></textarea>'));
+	} else {
+		$("#input").replaceWith($('<input placeholder="Type here" class="form-control" id="input"></input>'));
+	}
     $('#container').show()
     $('#input').val(item.defaultInput)
     $('#dialogLabel').html(item.label)

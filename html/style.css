@@ -15,7 +15,7 @@ html, body {
 
 #container {
 	display: none;
-	margin-top: 20rem!important;
+	margin-top: 10%;
 	align-items: center;
 	justify-content: center;
 }
@@ -26,19 +26,47 @@ form {
 	background-color: #EDEDE7;
 }
 
+
 #butt{
-  transition:all .4s ease-in-out;
+	display: inline-block;
+	outline: 0;
+	cursor: pointer;
+	border: none;
+	padding: 0 56px;
+	height: 45px;
+	line-height: 45px;
+	border-radius: 7px;
+	background-color: #0070f3;
+	color: white;
+	font-weight: 400;
+	font-size: 16px;
+	box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
+	transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease;
 }
 
 #butt:hover{
-  box-shadow: 0  12px 8px -8px rgba(0, 0, 0, 0.4);
-  
-}
-
-#close{
-  transition:all .4s ease-in-out;
+	background: rgba(0,118,255,0.9);
+	box-shadow: 0 6px 20px rgb(0 118 255 / 23%);
 }
 
 #close:hover{
-  box-shadow: 0  12px 8px -8px rgba(0, 0, 0, 0.4)
+	background: #848484d1;
+	box-shadow: 0 6px 20px rgb(93 93 93 / 23%);
+}
+
+#close {
+  	background: #555555d1;
+	display: inline-block;
+	outline: 0;
+	cursor: pointer;
+	border: none;
+	padding: 0 56px;
+	height: 45px;
+	line-height: 45px;
+	border-radius: 7px;
+	font-weight: 400;
+	font-size: 16px;
+	color: #ffffff;
+	box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.178);
+	transition: background 0.2s ease,color 0.2s ease, box-shadow 0.2s ease;
 }
