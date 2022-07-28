@@ -5,6 +5,7 @@
 
 ## Preview
 ![image](https://user-images.githubusercontent.com/36258300/158611318-ddf9ba50-c036-45cb-baf4-11840e731a23.png)
+![image](https://user-images.githubusercontent.com/36258300/181437858-47f650a8-f9e0-4eff-8906-a74d91fff78f.png)
 
 [![DEMO VIDEO](https://img.youtube.com/vi/jW9cdENUoxo/0.jpg)](https://youtu.be/jW9cdENUoxo "DEMO VIDEO")
 
