@@ -17,7 +17,7 @@
 ## Usage
 **add this somewhere in your code where you wanna trigger the dialog box**:
 ```lua
-exports['an_dialogBox']:showDialog(name, label, input, help, submitFunc, cancelFunc)
+exports['an_dialogBox']:showDialog(name, label, input, help, submitFunc, cancelFunc, textarea)
 ```
 - **`name`** **[REQUIRED]** A unique name for your dialog, can also be used to prevent people from injecting stuff to the dialog box with the NUI Dev Tools
 - **`label`** **[REQUIRED]** The text that's gonna be shown as the title of the dialog form
