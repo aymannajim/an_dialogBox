@@ -1,8 +1,8 @@
 # NUI Dialog Box for FiveM [Standalone]
 > ****An immersive dialog box with sounds and a simple but beautiful UI. I created this because of the very few options available out there. Using this utility will open a whole world of possibilities for your server and make your FiveM scripting easier. This is intended for advanced users who know a bit about coding.****
 
-[![Join my Discord](https://img.shields.io/discord/784961984021266492?color=5865f2&label=Discord&logo=https%3A%2F%2Fi.imgur.com%2Ftt5au4m.png&style=for-the-badge)](https://discord.gg/f2Nbv9Ebf5)
-## [👋 Join my Discord for Support](https://discord.gg/f2Nbv9Ebf5)
+[![Join my Discord](https://img.shields.io/discord/1100609827715166258?color=5865f2&label=Discord&logo=https%3A%2F%2Fi.imgur.com%2Ftt5au4m.png&style=for-the-badge)](https://discord.gg/KxdPzC5EeJ)
+## [👋 Join my Discord for Support](https://discord.gg/KxdPzC5EeJ)
 
 ## Preview
 ![image](https://user-images.githubusercontent.com/36258300/181438042-ce64a8ed-9895-409f-a8ea-b1eec148d2dd.png)
