@@ -20,10 +20,6 @@ client_scripts {
     'client.lua'
 }
 
-shared_scripts {
-	'config.lua',
-}
-
 files {
 	'html/index.html',
 	'html/main.js',
